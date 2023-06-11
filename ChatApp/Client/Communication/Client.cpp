@@ -43,8 +43,7 @@ bool CClient::Init( ) {
     return true;
 }
 
-void CClient::Cleanup( )
-{
+void CClient::Cleanup( ) {
     closesocket( m_Socket );
     WSACleanup( );
 }
